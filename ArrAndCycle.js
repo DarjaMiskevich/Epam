@@ -14,12 +14,12 @@ arrCar.join(',').split(',');
 //Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
 
 let arrName = ['Иван','Петр','Анна','Елена','Тузик','Мурзик'];
-arrName.map(function(item){return item=`${item} hello`} );
+let inviteName = arrName.map(function(item){return item=`${item} hello`} );
  
 //Преобразовать числовой массив в Boolean
 
 let num = [1,4,0,5,-4,0.1];
-num.map(function(item){return item = Boolean(item)});
+let numToBool = num.map(function(item){return item = Boolean(item)});
 
 //Отсортировать массив [1,6,7,8,3,4,5,6] по убыванию
 
@@ -47,8 +47,8 @@ for (var i = 0; i < myArr.length; i++) {
 
 //Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
 
-let a;
-for(a;a>10;a--){
+let a=20;
+for(a;a>=10;a--){
     console.log(a);
 }
 
@@ -56,7 +56,7 @@ for(a;a>10;a--){
 
 let d=1;
 for(d; d<=100; d++){
-    if(d%2===0){
+    if(d%2!==0){
     console.log(d);}
 }
 
