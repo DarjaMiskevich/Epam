@@ -2,13 +2,12 @@
 //Изменить свойство color объекта car на 'зеленый'
 //В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
 let car={
-    color:"черный" 
+    color:"черный",
+    power(){
+        console.log ('500'); 
+    } 
 };
 car.color="зеленый";
-
-car.power = function(){
-    console.log (this.power);
-}
 
 // На склад принимают груши и яблоки, напишите функцию, которая возвращает результат сложения количества принятых груш и яблок
 
@@ -21,8 +20,8 @@ function sumFruits(apples,pears){
 let myName="John";
 let userName = prompt('Введите имя');
 
-function getName (){
-    if (userName == myName) {
+function getName (myName){
+    if (userName === myName) {
         alert('Привет ' + myName);
     }
     else {
@@ -32,18 +31,18 @@ function getName (){
 
 // Напишите функцию вычисления типа аргумента и вывод типа в консоль
 
-function foo(a){
-    console.log(typeof a);
+function getTypeofArg(arg){
+    console.log(typeof arg);
     }
     
 //Напишите функцию, которая определяет является ли число простым или нет
 
-function testCycle(n) {
-    var x="Простое число";
-    var i=2;
+function isPrime(num) {
+    let x="Простое число";
+    let i=2;
     
-    while(i<=Math.sqrt(n)){
-        if(n%i==0){
+    while(i<=Math.sqrt(num)){
+        if(num%i===0){
               x="Составное число";
             }
             i++;
