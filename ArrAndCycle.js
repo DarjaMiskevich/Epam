@@ -37,12 +37,9 @@ let filterArr = arr.filter(function(number){
 
 //Написать функцию, которая принимает два параметра - массив и число и выводит индекс элемента массива равный числу
 
-myArr=[];
+let myArr=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','w','x','y','z'];
 function showIndexOfArr(num,myArr){
-for (var i = 0; i < myArr.length; i++) {
-    if(myArr[i]===num){
-        console.log(myArr[i])}
-  }
+    return myArr[num];
 }
 
 //Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
